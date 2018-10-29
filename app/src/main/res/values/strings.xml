@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Eduma Qr</string>
+    <string name="maintitle">Eduma Qr &amp; Barkod Oku</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- admob apk id -->
+    <string name="admobId">ca-app-pub-1344364055064622~3161606037</string>
+    <string name="nav_header_desc">Eduma Network QR &amp; Barkod</string>
+    <string name="nav_header_subtitle">Qr veya Barkod Okut</string>
+    <string name="nav_header_title">www.edumanetworks.com</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="admobtest">ca-app-pub-3940256099942544/6300978111</string>
+</resources>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "475701480550",
+    "firebase_url": "https://edumaqr.firebaseio.com",
+    "project_id": "edumaqr",
+    "storage_bucket": "edumaqr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:475701480550:android:d705dbafc93f3176",
+        "android_client_info": {
+          "package_name": "com.edumanetworks.edumaqr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "475701480550-8d377equb6o19s1q4p200qm5972qicgp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6z0E2xTKeCr2fZKbniEiXVSPE2eiJf9o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

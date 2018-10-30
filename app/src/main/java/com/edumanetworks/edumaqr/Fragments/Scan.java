@@ -81,9 +81,10 @@ public class Scan extends Fragment {
         public void handleResult(Result result) {
 
             ToneGenerator toneG = new ToneGenerator(AudioManager.STREAM_ALARM, 100);
-           Bitmap image =  BitmapFactory.decodeByteArray(result.getRawBytes(), 0, result.getRawBytes().length);
+           // Bitmap image =  BitmapFactory.decodeByteArray(result.getRawBytes(), 0, result.getRawBytes().length);
             toneG.startTone(ToneGenerator.TONE_CDMA_ALERT_CALL_GUARD, 100); // 200 is duration in ms
             String resultCode = result.getText();
+            String tip = result.getBarcodeFormat().toString();
 
             if(resultCode.length() > 1)
             {

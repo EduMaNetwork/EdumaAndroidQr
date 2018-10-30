@@ -7,6 +7,12 @@ import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.preference.PreferenceManager;
 
+import com.google.gson.Gson;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class SessionStorage {
     public static void putPref(String key, String value, Context context) {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
@@ -20,6 +26,31 @@ public class SessionStorage {
         return preferences.getString(key, null);
     }
 
+    public static void putListHistoryPref(String key, List<HistoryModel> liste,Context context){
+
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+        SharedPreferences.Editor editor = prefs.edit();
+
+        Gson gson = new Gson();
+        String jsonFavorites = gson.toJson(liste);
+
+        editor.putString(key, jsonFavorites);
+
+        editor.commit();
+    }
+    public static ArrayList<HistoryModel> getListHistoryPref(String key,Context context){
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
+        String listPref = preferences.getString(key, null);
+        Gson gson = new Gson();
+        HistoryModel[] scanItems = gson.fromJson(listPref,
+                HistoryModel[].class);
+        List<HistoryModel> favorites;
+
+        favorites = Arrays.asList(scanItems);
+        favorites = new ArrayList<HistoryModel>(favorites);
+
+        return (ArrayList<HistoryModel>) favorites;
+    }
 
 
     public static void PublicAlert(String title,String alert, Context context) {
@@ -37,5 +68,8 @@ public class SessionStorage {
         });
         abl.show();
 
+
     }
+
+
 }

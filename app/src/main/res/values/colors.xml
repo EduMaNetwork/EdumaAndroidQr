@@ -8,4 +8,7 @@
     <color name="turkuazdark">#1b877f</color>
     <color name="ligth_gray">#d3d3d3</color>
     <color name="light_gray">#d3d3d3</color>
+    <color name="transparent">#00000000</color>
+    <color name="history_list_item_bg">#ffffff</color>
+    <color name="view_divider_color">#BABABA</color>
 </resources>
